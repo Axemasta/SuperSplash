@@ -1,7 +1,11 @@
 # SuperSplash
 Maui proof of concept with native splash, dummy splash loading transition
 
+| Native Splash                                       | Dummy Splash                                       |
+| --------------------------------------------------- | -------------------------------------------------- |
+| ![Native Splash Screen]( assets/native_splash.PNG ) | ![Native Splash Screen]( assets/dummy_splash.PNG ) |
 
+See the [demo video](assets/demo.MP4) to see the transition between the native & dummy splash pages!
 
 ## Add Native Splash
 

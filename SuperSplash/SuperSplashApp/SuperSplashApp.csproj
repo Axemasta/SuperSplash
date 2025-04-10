@@ -21,7 +21,7 @@
         <Nullable>enable</Nullable>
 
         <!-- Display name -->
-        <ApplicationTitle>SpashSplashApp</ApplicationTitle>
+        <ApplicationTitle>Super Splash App</ApplicationTitle>
 
         <!-- App Identifier -->
         <ApplicationId>com.axemasta.supersplashapp</ApplicationId>
@@ -61,7 +61,7 @@
     
     <ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
         <InterfaceDefinition Include="Resources\LaunchScreen.storyboard"/>
-        <BundleResource Include="Platforms\iOS\Assets.xcassets\**\*" />
+        <BundleResource Include="Platforms\iOS\Resources\Assets.xcassets\**\*" />
     </ItemGroup>
 
     <ItemGroup>
