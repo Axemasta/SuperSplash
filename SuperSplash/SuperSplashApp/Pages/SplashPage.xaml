@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="SuperSplashApp.Pages.SplashPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="{AppThemeBinding Light={StaticResource SplashBackgroundLight},
+                                      Dark={StaticResource SplashBackgroundDark}}"
+    NavigationPage.HasNavigationBar="False">
+    <AbsoluteLayout IgnoreSafeArea="True">
+
+        <Image
+            AbsoluteLayout.LayoutBounds="1,1,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Aspect="AspectFill"
+            Source="dotnet_bot.png" />
+
+        <ActivityIndicator
+            AbsoluteLayout.LayoutBounds="0.5,0.5,24,24"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            IsRunning="True"
+            Color="{StaticResource White}" />
+    </AbsoluteLayout>
+</ContentPage>
