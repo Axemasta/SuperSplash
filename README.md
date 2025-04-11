@@ -61,20 +61,19 @@ We need to create a new assets catalog in order for the native launch screen to 
 
 - Copy the `Assets.xcassets` folder into your maui project: `Platforms/iOS/Resources/`
 
-- Add to the item group where we declared the interface definition:
-
+- If you have added it to the resource folder, it will automatically have a `BundleResource` link. If you moved it to another folder you will need to add a bundle resource:
   ```xml
-  <BundleResource Include="Platforms\iOS\Assets.xcassets\**\*" />
+  <BundleResource Include="Platforms\iOS\MyCustomFolder\Assets.xcassets\**\*" />
   ```
 
 - In your splash screen:
 
-  - Add to the `<resources>`:
-    ```xml
-    <namedColor name="SplashBackground">
-                <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
-            </namedColor>
-    ```
+- Add to the `<resources>`:
+  ```xml
+  <namedColor name="SplashBackground">
+      <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+  </namedColor>
+  ```
 
   - And set your view controllers background:
 
